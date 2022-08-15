@@ -1,14 +1,4 @@
-class Program {
-    public static void main(String args[]) {
-        int[] arr = {2, 1, 7, 4, 0, 8, 2, 9};
-        BubbleSort.bubblesort(arr);
-        for (int element : arr) {
-            System.out.print(element);
-        }
-    }
-}
-
-class BubbleSort {
+public class BubbleSort {
     public static void bubblesort(int[] arr) {
         boolean finished = false;
 

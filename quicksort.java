@@ -1,14 +1,4 @@
-class Program {
-    public static void main(String args[]) {
-        int[] arr = {2, 1, 7, 4, 0, 8, 2, 9};
-        QuickSort.quicksort(arr);
-        for (int element : arr) {
-            System.out.print(element);
-        }
-    }
-}
-
-class QuickSort {
+public class QuickSort {
     public static void quicksort(int[] arr) {
         int start = 0;
         int end = arr.length-1;
