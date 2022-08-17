@@ -1,5 +1,5 @@
-public class BubbleSort {
-    public static void bubblesort(int[] arr) {
+public class BubbleSort extends Sort {
+    public static void sort(int[] arr) {
         boolean finished = false;
 
         while (!finished) {
@@ -12,13 +12,5 @@ public class BubbleSort {
                 }
             }
         }
-    }
-
-    private static void swap(int[] arr, int i, int j) {
-        if (i == j) return;
-
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
     }
 }

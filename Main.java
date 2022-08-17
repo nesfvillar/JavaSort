@@ -1,9 +1,24 @@
+import java.util.Random;
+
 class Main {
     public static void main(String[] args) {
-        int[] arr = { 2, 1, 7, 4, 0, 8, 2, 9 };
-        CountingSort.countingsort(arr, 10);
-        for (int element : arr) {
-            System.out.print(element);
+        Random random = new Random();
+        int[] arr = createRandomArray(10, 100, random);
+        CountingSort.sort(arr);
+        showArray(arr);
+    }
+
+    private static int[] createRandomArray(int n, int maxVal, Random random) {
+        int[] arr = new int[n];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = random.nextInt(maxVal);
+        }
+        return arr;
+    }
+
+    private static void showArray(int[] array) {
+        for (int element : array) {
+            System.out.print(element + " ");
         }
     }
 }
